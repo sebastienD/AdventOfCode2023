@@ -8,7 +8,11 @@ import (
 )
 
 func TestFirstPart(t *testing.T) {
-	input := ``
+	input := `32T3K 765
+T55J5 684
+KK677 28
+KTJJT 220
+QQQJA 483`
 	sum := firstPart(strings.NewReader((input)))
-	assert.Equal(t, 0, sum)
+	assert.Equal(t, int64(6440), sum)
 }
